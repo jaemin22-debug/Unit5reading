@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caffè Sospeso Reading Quiz</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        .paragraph-box {
+            background-color: #ffffff;
+            border-left: 5px solid #3498db;
+            padding: 15px 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-style: italic;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .question-container {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        .question-text {
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        .options {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .options li {
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            padding: 10px 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        .options label:hover {
+            background-color: #e8f4fd;
+        }
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 50px;
+        }
+        button {
+            background-color: #2ecc71;
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background-color 0.2s;
+        }
+        button:hover {
+            background-color: #27ae60;
+        }
+        .underlined {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Reading Comprehension Quiz: Caffè Sospeso</h1>
+
+    <form id="quizForm">
+        <div class="paragraph-box">
+            "The tradition of caffè sospeso began in the working-class cafés of Naples, where a customer who had experienced good luck would pay for two coffees <strong>[  (1)  ]</strong> receiving only one. The second coffee was then held by the café for a later customer who could not afford <span class="underlined">it</span>."
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">1. Choose the most appropriate word to fill in the blank (1).</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q1" value="A"> after</label></li>
+                <li><label><input type="radio" name="q1" value="B"> before</label></li>
+                <li><label><input type="radio" name="q1" value="C"> when</label></li>
+                <li><label><input type="radio" name="q1" value="D"> instead of</label></li>
+            </ul>
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">2. What does the underlined word "it" refer to?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q2" value="A"> the tradition</label></li>
+                <li><label><input type="radio" name="q2" value="B"> the second coffee</label></li>
+                <li><label><input type="radio" name="q2" value="C"> good luck</label></li>
+                <li><label><input type="radio" name="q2" value="D"> working-class</label></li>
+            </ul>
+        </div>
+
+        <div class="paragraph-box">
+            "A sospeso <strong>[  (3)  ]</strong> 'suspended' coffee is a cup of coffee paid for in advance as an anonymous act of charity. An paying customer enters a shop and orders a 'sospeso'. It <strong>[  (4)  ]</strong> a beautiful symbol of solidarity during hard times, especially during World War II, when many people struggled financially. Although the custom declined during the economic boom of the post-war years, it <strong>[  (5)  ]</strong> popular again in recent years due to global economic crises and social media awareness."
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">3. Choose the most appropriate word to fill in the blank (3).</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q3" value="A"> or</label></li>
+                <li><label><input type="radio" name="q3" value="B"> but</label></li>
+                <li><label><input type="radio" name="q3" value="C"> and</label></li>
+                <li><label><input type="radio" name="q3" value="D"> so</label></li>
+            </ul>
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">4. Choose the correct past tense verb to fill in the blank (4).</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q4" value="A"> is</label></li>
+                <li><label><input type="radio" name="q4" value="B"> were</label></li>
+                <li><label><input type="radio" name="q4" value="C"> was</label></li>
+                <li><label><input type="radio" name="q4" value="D"> are</label></li>
+            </ul>
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">5. Choose the correct form of the verb 'become' to fill in the blank (5).</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q5" value="A"> become</label></li>
+                <li><label><input type="radio" name="q5" value="B"> becomes</label></li>
+                <li><label><input type="radio" name="q5" value="C"> becomed</label></li>
+                <li><label><input type="radio" name="q5" value="D"> became</label></li>
+            </ul>
+        </div>
+
+        <div class="paragraph-box">
+            "When a person in need enters the café, they can ask if there are any 'sospesos' available. If there are, they receive a hot cup of coffee for free. This system relies entirely on the honesty of the customers and the café owners, making it <span class="underlined">helpful to them</span>."
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">6. In the phrase "helpful to them", who does the word "them" most likely refer to?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q6" value="A"> Café owners who want to advertise their business globally</label></li>
+                <li><label><input type="radio" name="q6" value="B"> People who are too busy and need to drink coffee quickly</label></li>
+                <li><label><input type="radio" name="q6" value="C"> People experiencing financial difficulties who cannot afford coffee</label></li>
+                <li><label><input type="radio" name="q6" value="D"> Wealthy customers who want to show off their money</label></li>
+            </ul>
+        </div>
+
+        <div class="paragraph-box">
+            "The beauty of this tradition lies in its simplicity and the kindness of strangers. A small, <span class="underlined">generous</span> act can brighten someone's entire day. Everyone needs a little warmth <span class="underlined">now and then</span>, and a suspended coffee provides exactly that—a warm drink and a reminder that society cares. It is not just about coffee; it is about human dignity. The person receiving the coffee does not feel like a beggar, and the person giving it does not feel <strong>[  (9)  ]</strong> proud."
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">7. Which of the following is closest in meaning to the underlined word "generous"?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q7" value="A"> kind and giving</label></li>
+                <li><label><input type="radio" name="q7" value="B"> cheap and careless</label></li>
+                <li><label><input type="radio" name="q7" value="C"> strict and serious</label></li>
+                <li><label><input type="radio" name="q7" value="D"> fast and efficient</label></li>
+            </ul>
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">8. Which of the following can replace the underlined expression "now and then"?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q8" value="A"> all the time</label></li>
+                <li><label><input type="radio" name="q8" value="B"> occasionally</label></li>
+                <li><label><input type="radio" name="q8" value="C"> never before</label></li>
+                <li><label><input type="radio" name="q8" value="D"> immediately</label></li>
+            </ul>
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">9. Choose the most appropriate word to fill in the blank (9) to mean "excessively" or "overly".</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q9" value="A"> so</label></li>
+                <li><label><input type="radio" name="q9" value="B"> either</label></li>
+                <li><label><input type="radio" name="q9" value="C"> neither</label></li>
+                <li><label><input type="radio" name="q9" value="D"> too</label></li>
+            </ul>
+        </div>
+
+        <div class="question-container">
+            <div class="question-text">10. What is the main topic of the entire reading passage?</div>
+            <ul class="options">
+                <li><label><input type="radio" name="q10" value="A"> The history of coffee beans in Europe</label></li>
+                <li><label><input type="radio" name="q10" value="B"> An Italian charity tradition called 'caffè sospeso'</label></li>
+                <li><label><input type="radio" name="q10" value="C"> The economic impact of World War II</label></li>
+                <li><label><input type="radio" name="q10" value="D"> How to run a successful café business</label></li>
+            </ul>
+        </div>
+
+        <div class="btn-container">
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
+        </div>
+    </form>
+
+    <script>
+        function calculateScore() {
+            // 정답 키 (10문항)
+            const correctAnswers = {
+                q1: 'D',
+                q2: 'B',
+                q3: 'A',
+                q4: 'C',
+                q5: 'D',
+                q6: 'C',
+                q7: 'A',
+                q8: 'B',
+                q9: 'D',
+                q10: 'B'
+            };
+
+            let score = 0;
+            const form = document.getElementById('quizForm');
+            
+            // 모든 문항 확인
+            for (let i = 1; i <= 10; i++) {
+                const questionName = 'q' + i;
+                const selectedOption = form.elements[questionName].value;
+                
+                if (selectedOption === correctAnswers[questionName]) {
+                    score++;
+                }
+            }
+
+            // 결과만 알림창으로 출력
+            alert("You scored " + score + " out of 10.");
+        }
+    </script>
+</body>
+</html>
